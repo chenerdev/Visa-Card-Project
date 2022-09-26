@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="b">
+        <section class="sec1">
+          <div class="backcard">
+          
+          <div class="tt">
+            <img src="images/bg-card-back.png" alt="" class="img1" />
+            <img src="images/bg-card-front.png" alt="" class="img2" />
+            <img src="images/card-logo.svg" alt="" class="img3" />
+
+            <div class="tttext">
+              <p class="p1">0000 0000 0000 0000</p>
+              <p class="p2">Jane Appleseed</p>
+              <p class="p3"><span class="left">00</span>/<span class="right">00</span></p>
+              <p class="p4">000</p>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="sec2">
+          <form>
+            <label for="i1">Cardholder Name</label> <br />
+
+            <input type="text" placeholder="e.g. Jane Appleseed" id="i1" maxlength="16"/>
+            <p class="eror eror1">Can't be blank </p>
+            <br />
+
+            <label for="i2">Card Number</label> <br />
+            <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="i2" maxlength="19" />
+            <p class="eror eror2">Can't be blank </p>
+            <label for="">Exp. Date (MM/YY) <span>CVV</span> </label>
+
+            <div class="in">
+              <input class="inp1 inp" type="text" placeholder="MM" maxlength="2" />
+              <!-- <p class="eror eror2">Can't be blank </p> -->
+              <input class="inp2 inp" type="text" placeholder="YY" maxlength="2" />
+
+              <input
+                class="inp3 inp"
+                name="inp3"
+                type="text"
+                placeholder="e.g. 123"
+                maxlength="3"
+              />
+            </div>
+
+            <p class="eror eror3">Can't be blank </p>
+            <p class="eror eror4">Can't be blank </p>
+
+            <button class="vv">Confirm</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.facebook.com/ghynar.karkoky/">Chenardev</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
